@@ -1,0 +1,46 @@
+header {
+  img {
+    width: 80px;
+  }
+}
+
+footer {
+  img {
+    max-width: 48px;
+    @include size(48px);
+    @include mobile {
+      @include size(24px);
+    }
+  }
+}
+
+.btn {
+  padding: 6px 12px;
+}
+
+.btn-lg {
+  padding: 16px 176px;
+  @include pad {
+    padding: 16px 136px;
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background: $primary;
+}
+
+.subpage-title {
+  display: flex;
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 16px;
+    width: 8px;
+    height: 72px;
+    background: $primary;
+    @include mobile {
+      height: 36px;
+    }
+  }
+}
